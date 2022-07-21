@@ -5,11 +5,11 @@ metadata:
   name: brewz
 spec:
   host: brewz.f5demo.com
+  tls: 
+    secret: brewz-tls
   policies: 
     - name: waf-policy
-  tls:
-    secret: brewz-tls
-  upstreams:
+  upstreams: 
     - name: spa
       service: spa
       port: 80
